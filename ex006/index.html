@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="quadrado">
+        <p>Clique</p>
+    </div>
+    <script>
+        let buttom = document.getElementById('quadrado')
+        buttom.addEventListener('click', clicar)
+        buttom.addEventListener('mouseleave', saiu)
+
+    function clicar() {
+            buttom.style = 'background-color:red; color:white; font-size:2rem;'
+            buttom.innerHTML = 'Clicou'
+        }
+
+        function saiu() {
+            buttom.style = 'background-color:blue; color:white;font-size:2rem;'
+            buttom.innerHTML = 'Saiu?'
+        }
+    </script>
+</body>
+
+</html>

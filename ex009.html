@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Teste do Detran</h1>
+    <label for="txt1">Coloque a sua velocidade:</label>
+    <input type="number" name="txt" id="txt1">
+    <input type="submit" value="Enviar" id="botao">
+    <div id="result"></div>
+    <script>
+        let vel = document.getElementById('txt1')
+        let velocidade = Number(vel)
+        let envio = document.querySelector('#botao')
+        let result = document.getElementById('result')
+        envio.addEventListener('click', ()=>{
+            result.textContent = ` Sua velocidade é ${Number(vel.value)} Km/hr! ` 
+            if(Number(vel.value) > 60) {
+                result.innerHTML +=' <br>Segundo a lei essa velocidade não é permitida '
+                result.innerHTML += ' <br>Dirija com segurança! '
+            } else {
+                result.innerHTML += '<br>Está dentro dos parametros'
+                result.innerHTML += '<br>Tenha um bom dia! '
+            }
+        })
+    </script>
+</body>
+</html>

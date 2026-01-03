@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <main>
+        <h1>Formando um site</h1>
+        <input type="number" name="txt1" id="txt1" placeholder="valor 1"> +
+        <input type="number" name="txt2" id="txt2" placeholder="valor 2">
+        <input type="button" value="Enviar" id="button">
+        <p><strong>Resultado</strong></p>
+    </main>
+    <script>
+        let n1 = document.getElementById('txt1')
+        let n2 = document.getElementById('txt2')
+        let button = document.getElementById('button')
+        let result = document.querySelector ('strong')
+        button.addEventListener ('click', ()=>{
+          result.textContent = `Seu resultado de ${n1.value} + ${n2.value} é ${Number(n1.value) + Number(n2.value)}`  
+        document.body.style = 'background-color:blue;color:white'})
+      
+    </script>
+</body>
+</html>
