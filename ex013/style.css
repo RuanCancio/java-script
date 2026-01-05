@@ -30,14 +30,6 @@ section {
     gap: 5rem;
     box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.466);
 }
-
-#horas {
-    margin-top: 50px;
-    font-size:1.5rem;
-    font-weight: bold;
-}
-#image img {
-    margin-bottom: 50px;
-    border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba(99, 95, 95, 0.473);
+.style {
+    margin: 2rem;
 }
