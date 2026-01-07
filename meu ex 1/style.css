@@ -1,0 +1,10 @@
+img {
+    opacity: 0;
+    transition: 0.5s;
+    width: 500px;
+
+}
+
+.mostrar {
+    opacity:1;
+}

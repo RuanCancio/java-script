@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Aperte o botão!</h1>
+    <button class="but">Enviar</button>
+    <img src="../ex013/imagens/h-bb.jpg" alt="a" class="mostrar">
+    <script>
+        let botao = document.querySelector('.but')
+        let image = document.querySelector('img')
+        botao.addEventListener('click', ()=> {
+            image.classList.toggle('mostrar')
+        })
+
+    </script>
+</body>
+
+</html>

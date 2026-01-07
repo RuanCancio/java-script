@@ -1,0 +1,35 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(85, 153, 255);
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+section {
+    background-color: white;
+    color: black;
+    width: 700px;
+    height: auto;
+    margin: 20px 0px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 5rem;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.466);
+}
+.style {
+    margin: 2rem;
+}
