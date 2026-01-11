@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <button id="btn">Carregar alunos</button>
+    <ul id="lista"></ul>
+
+    <script>
+        const btn = document.getElementById("btn")
+        const lista = document.getElementById("lista")
+
+        btn.onclick = async () => {
+            let resposta = await fetch("dados.json")
+            let alunos = await resposta.json()
+
+            lista.innerHTML = ""
+
+            alunos.forEach(a => {
+                if (a.nota >= 7) {
+                    let li = document.createElement("li")
+                    li.textContent = `${a.nome} - Nota: ${a.nota} (aprovado)`
+                    lista.appendChild(li)
+                } else {
+                    let li = document.createElement("li")
+                    li.textContent = `${a.nome} - Nota: ${a.nota} (reprovado)`
+                    lista.appendChild(li)
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>
