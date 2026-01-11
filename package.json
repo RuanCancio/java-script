@@ -1,8 +1,8 @@
 {
   "name": "java-script",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Minha pasta de estudos",
+  "main": "ambiente.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,9 +13,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module" ,
+  "type": "module",
   "bugs": {
     "url": "https://github.com/RuanCancio/java-script/issues"
   },
-  "homepage": "https://github.com/RuanCancio/java-script#readme"
+  "homepage": "https://github.com/RuanCancio/java-script#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
